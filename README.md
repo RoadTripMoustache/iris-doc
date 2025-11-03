@@ -2,7 +2,8 @@
 
 Project containing all the iris documentation.
 
-This project uses [**Sphinx**](https://www.sphinx-doc.org/en/master/index.html) to build the documentation.
+This project uses [**Sphinx**](https://www.sphinx-doc.org/en/master/index.html) and 
+[**reStructuredText**](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html) to build the documentation.
 
 ## Current supported languages
 - English

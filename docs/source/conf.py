@@ -33,6 +33,10 @@ html_context = {
     'current_language': 'en',
     'languages': [['English', '/en/'], ['Français', '/fr/']],
 }
+html_logo = "_static/logo.png"
+html_favicon = '_static/logo.ico'
+html_title = "Iris documentation"
+html_short_title = "Iris docs"
 
 # -- i18n -------------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/advanced/intl.html
