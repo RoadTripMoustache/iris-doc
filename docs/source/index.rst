@@ -23,15 +23,6 @@ To make the feedback process easy and reusable for any kind of service or applic
 
    *Customized Iris instance for the Guide Nestor application*
 
-----------
-
-Supported authentication services
----------------------------------
-
-Here is the current list of authentication services supported by Iris :
-
-- `Firebase Authentication <https://firebase.google.com/docs/auth>`__
-
 
 .. toctree::
    :hidden:
