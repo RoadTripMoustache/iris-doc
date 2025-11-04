@@ -41,3 +41,9 @@ Supported databases
 Here is the current list of databases supported by Iris :
 
 - MongoDB
+
+
+.. note::
+   More authentication services and file storage providers will be added in the future.
+
+   If you want, :doc:`you can contribute<../contribute/contribute>` to request and/or implement them.
