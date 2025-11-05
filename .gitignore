@@ -1,0 +1,4 @@
+.idea
+.venv
+taskfile.yaml
+docs/build

@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, RoadTripMoustache
+# This file is distributed under the same license as the Iris package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Iris \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-04 19:53-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/index.rst:2
+msgid "Introduction"
+msgstr ""
+
+#: ../../source/index.rst:4
+msgid ""
+"**Iris** is a web application and an api to help you to get feedbacks "
+"from your users."
+msgstr ""
+
+#: ../../source/index.rst:6
+msgid "These feedbacks can be :"
+msgstr ""
+
+#: ../../source/index.rst:8
+msgid "**bug** - If a user wants to show an issue in the application"
+msgstr ""
+
+#: ../../source/index.rst:9
+msgid ""
+"**enhancement** - If a user wants to suggest a new feature or an "
+"improvement of an existing one"
+msgstr ""
+
+#: ../../source/index.rst:14
+msgid "*Homescreen once a user is logged in*"
+msgstr ""
+
+#: ../../source/index.rst:16
+msgid ""
+"To make the feedback process easy and reusable for any kind of service or"
+" application, 2 things are done :"
+msgstr ""
+
+#: ../../source/index.rst:18
+msgid ""
+"**Customizable authentication** - To be able to reuse the same "
+"authentication as in your application"
+msgstr ""
+
+#: ../../source/index.rst:19
+msgid ""
+"**Customizable logo and title** - To let your user know that this "
+"platform is related to you, your company or your application"
+msgstr ""
+
+#: ../../source/index.rst:24
+msgid "*Customized Iris instance for the Guide Nestor application*"
+msgstr ""
+
+#~ msgid "Iris"
+#~ msgstr ""
+

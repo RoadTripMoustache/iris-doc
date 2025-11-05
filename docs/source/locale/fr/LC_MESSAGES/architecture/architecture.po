@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, RoadTripMoustache
+# This file is distributed under the same license as the Iris package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Iris \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-04 19:53-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/architecture/architecture.rst:2
+msgid "How does it work?"
+msgstr "Comment ça marche ?"
+
+#: ../../source/architecture/architecture.rst:7
+msgid "*Architecture of the iris service*"
+msgstr "Architecture d'Iris"
+
+#: ../../source/architecture/architecture.rst:9
+msgid "The Iris architecture is quite simple."
+msgstr "L'architecture d'Iris est assez simple."
+
+#: ../../source/architecture/architecture.rst:11
+msgid ""
+"**Iris frontend** exposes the web application. It uses the authentication"
+" service to log in the user and validate the user token. It also uses the"
+" Iris API to manage the ideas and other resources."
+msgstr ""
+"**Iris frontend** exposes l'application web qui utilise le service d'authentification"
+" pour permettre à l'utilisateur de se connecter. Il utilise aussi Iris API"
+" pour gérer les idées et autres ressources."
+
+#: ../../source/architecture/architecture.rst:14
+msgid ""
+"**Iris API** exposes all the methods to manage the data used by the "
+"frontend. It also uses the authentication service to validate the user "
+"token. And it uses a database and image storage service to store all the "
+"data and informations."
+msgstr ""
+"**Iris API** exposes toutes les méthodes pour gérer les données utilisées"
+" par l'application web. Les endpoints de l'api sont protégées par le même "
+" système d'authentification que le frontend, car attend le jeton de l'utilisateur."
+" Il utilise aussi la base de données et le service de stockage d'images pour"
+" stocker données, images et informations."
+
+#: ../../source/architecture/architecture.rst:21
+msgid "Supported authentication services"
+msgstr "Systèmes d'authentification supportés"
+
+#: ../../source/architecture/architecture.rst:23
+msgid "Here is the current list of authentication services supported by Iris :"
+msgstr "Voici la liste des services d'authentification actuellement supportés par Iris :"
+
+#: ../../source/architecture/architecture.rst:25
+msgid "`Firebase Authentication <https://firebase.google.com/docs/auth>`__"
+msgstr ""
+
+#: ../../source/architecture/architecture.rst:30
+msgid "Supported file storages"
+msgstr "Services de stockage de fichiers supportés"
+
+#: ../../source/architecture/architecture.rst:32
+msgid "Here is the current list of file storages supported by Iris :"
+msgstr "Voici la liste actuelle des services de stockage de fichiers supportés par Iris :"
+
+#: ../../source/architecture/architecture.rst:34
+msgid "In the server hosting the API"
+msgstr "Sur le serveur hébergeant l'API"
+
+#: ../../source/architecture/architecture.rst:39
+msgid "Supported databases"
+msgstr "Base de données supportées"
+
+#: ../../source/architecture/architecture.rst:41
+msgid "Here is the current list of databases supported by Iris :"
+msgstr "Voici la liste actuelle des bases de données supportées par Iris :"
+
+#: ../../source/architecture/architecture.rst:43
+msgid "MongoDB"
+msgstr ""
+
+#: ../../source/architecture/architecture.rst:47
+msgid ""
+"More authentication services and file storage providers will be added in "
+"the future."
+msgstr ""
+"D'autres services d'authentification et de stockage de fichiers seront ajoutés"
+" dans le futur."
+
+#: ../../source/architecture/architecture.rst:49
+msgid ""
+"If you want, :doc:`you can contribute<../contribute/contribute>` to "
+"request and/or implement them."
+msgstr ""
+"Si vous voulez, :doc:`vous pouvez contribuer<../contribute/contribute>` à "
+"la demande ou l'implémentation de nouveaux services."

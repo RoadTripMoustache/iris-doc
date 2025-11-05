@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, RoadTripMoustache
+# This file is distributed under the same license as the Iris package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Iris \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-04 19:53-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/contribute/contribute.rst:2
+msgid "Contribute and Support"
+msgstr "Contribution et support"
+
+#: ../../source/contribute/contribute.rst:4
+msgid "You have many ways to contribute in this project, you can :"
+msgstr "Il y a plusieurs manières pour que vous puissiez contribuer au projet, vous pouvez :"
+
+#: ../../source/contribute/contribute.rst:6
+msgid "Open issues to :"
+msgstr "Ouvrir des issues pour :"
+
+#: ../../source/contribute/contribute.rst:7
+msgid "report an issue"
+msgstr "remonter un problème"
+
+#: ../../source/contribute/contribute.rst:8
+msgid "request an improvement"
+msgstr "demander une amélioration"
+
+#: ../../source/contribute/contribute.rst:9
+msgid "ask some questions"
+msgstr "poser des questions"
+
+#: ../../source/contribute/contribute.rst:10
+msgid "Discuss on these opened issues"
+msgstr "Échanger concernant les issues ouvertes"
+
+#: ../../source/contribute/contribute.rst:11
+msgid "Contribute in the projects or the documentation"
+msgstr "Contribuer sur les projets ou leur documentation"
+
+#: ../../source/contribute/contribute.rst:12
+msgid ""
+"`Iris API <https://github.com/RoadTripMoustache/iris-"
+"api/blob/main/CONTRIBUTE.md>`__"
+msgstr ""
+
+#: ../../source/contribute/contribute.rst:13
+msgid ""
+"`Iris Docs <https://github.com/RoadTripMoustache/iris-"
+"docs/blob/main/CONTRIBUTE.md>`__"
+msgstr ""
+
+#: ../../source/contribute/contribute.rst:14
+msgid ""
+"`Iris Frontend <https://github.com/RoadTripMoustache/iris-"
+"frontend/blob/main/CONTRIBUTE.md>`__"
+msgstr ""
+
+#: ../../source/contribute/contribute.rst:16
+msgid ""
+"And if you want to support the project, **leave a star on our github "
+"projects** !"
+msgstr ""
+"Et si vous voulez supporter le projet, **laissez une étoile sur nos projets github** !"
+
+#: ../../source/contribute/contribute.rst:18
+msgid "Every action you can take will help Iris to live and grow !"
+msgstr "Chaque action que vous pourrez faire aideront Iris à vivre et grandir !"
+

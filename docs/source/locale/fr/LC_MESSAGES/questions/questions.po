@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, RoadTripMoustache
+# This file is distributed under the same license as the Iris package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Iris \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-04 19:53-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/questions/questions.rst:2
+msgid "Frequent questions"
+msgstr "Question fréquentes"
+
+#: ../../source/questions/questions.rst:4
+msgid ""
+"If you have a question and you don't find the information here, please "
+"`open an issue <https://github.com/RoadTripMoustache/iris-doc/issues>`__ "
+"in Github and we will answer you as fast as we can."
+msgstr ""
+"Si vous avez une question et que vous ne trouvez pas l'information ici, merci "
+"`d'ouvrir une issue <https://github.com/RoadTripMoustache/iris-doc/issues>`__ "
+"dans Github et nous allons vous répondre dès que possible."
+
+#: ../../source/questions/questions.rst:8
+msgid ""
+"Theses questions will help to improve the documentation, improve the "
+"solution and help other users. So don't hesitate !"
+msgstr ""
+"Ces questions vont aider à améliorer la documentation, la solution et aider"
+" d'autres utilisateurs. Donc n'hésitez pas !"
+
+#: ../../source/questions/questions.rst:10
+msgid "---"
+msgstr ""
+
+#: ../../source/questions/questions.rst:12
+msgid "*No questions currently*"
+msgstr "*Pas de questions actuellement*"
+
