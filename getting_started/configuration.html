@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" data-accent-color="violet" data-content_root="../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Configuration - Iris documentation</title><link rel="shortcut icon" href="../_static/logo.ico"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Start with docker compose" href="docker_compose.html" /><link rel="prev" title="Getting started" href="index.html" /><script>
+    function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
+    setColorMode(localStorage._theme||"auto");
+  </script><link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=e1a1ceaf" />
+    <link rel="stylesheet" type="text/css" href="../_static/shibuya.css?v=d140fbf8" />
+    <link media="print" rel="stylesheet" type="text/css" href="../_static/print.css?v=20ff2c19" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sy-f-text: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+  --sy-f-heading: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+}
+</style>
+    <meta property="og:type" content="website"/><meta property="og:title" content="Configuration"/>
+<meta name="twitter:card" content="summary"/>
+  
+</head>
+<body><div class="sy-head">
+  <div class="sy-head-blur"></div>
+  <div class="sy-head-inner sy-container mx-auto">
+    <a class="sy-head-brand" href="../index.html">
+      <img class="light-logo" src="../_static/logo.png" alt="Iris" height="28" loading="lazy" />
+      <img class="dark-logo" src="../_static/logo.png" alt="Iris" height="28" loading="lazy" />
+      <strong>Iris</strong>
+    </a>
+    <div class="sy-head-nav" id="head-nav">
+      <nav class="sy-head-links"></nav>
+      <div class="sy-head-extra flex items-center print:hidden"><form class="searchbox flex items-center" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Search" />
+  <kbd>/</kbd>
+</form><div class="nav-languages">
+  <button type="button">
+    <span class="md:hidden">Translations</span>
+    <iconify-icon icon="lucide:languages"></iconify-icon>
+  </button>
+  <div class="nav-languages-choices">
+    <ul><li><a href="/">English</a></li><li><a href="/fr/">Français</a></li></ul>
+  </div>
+</div><div class="sy-head-socials"></div></div>
+    </div>
+    <div class="sy-head-actions flex items-center shrink-0 print:hidden"><button class="js-theme theme-switch flex items-center"
+data-aria-auto="Switch to light color mode"
+data-aria-light="Switch to dark color mode"
+data-aria-dark="Switch to auto color mode">
+<i class="i-lucide theme-icon"></i>
+</button><button class="md:hidden flex items-center js-menu" aria-label="Menu" type="button" aria-controls="head-nav" aria-expanded="false">
+        <div class="hamburger">
+          <span class="hamburger_1"></span>
+          <span class="hamburger_2"></span>
+          <span class="hamburger_3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="sy-page sy-container flex mx-auto">
+  <aside id="lside" class="sy-lside md:w-72 md:shrink-0 print:hidden">
+    <div class="sy-lside-inner md:sticky">
+      <div class="sy-scrollbar p-6">
+        <div class="globaltoc" data-expand-depth="0"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/architecture.html">How does it work?</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Getting started</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docker_compose.html">Start with docker compose</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../questions/questions.html">Frequent questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/contribute.html">Contribute and Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/credits.html">Credits</a></li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="lside-overlay js-menu" role="button" aria-label="Close left sidebar" aria-controls="lside" aria-expanded="false"></div>
+  <aside id="rside" class="sy-rside pb-3 w-64 shrink-0 order-last">
+    <button class="rside-close js-menu xl:hidden" aria-label="Close Table of Contents" type="button" aria-controls="rside" aria-expanded="false">
+      <i class="i-lucide close"></i>
+    </button>
+    <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>On this page</h3><ul>
+<li><a class="reference internal" href="#api">API</a><ul>
+<li><a class="reference internal" href="#firebase">Firebase</a><ul>
+<li><a class="reference internal" href="#yaml-structure">YAML Structure</a></li>
+<li><a class="reference internal" href="#parameters">Parameters</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#database">Database</a><ul>
+<li><a class="reference internal" href="#id1">YAML Structure</a></li>
+<li><a class="reference internal" href="#id2">Parameters</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#server">Server</a><ul>
+<li><a class="reference internal" href="#id3">YAML Structure</a></li>
+<li><a class="reference internal" href="#id4">Parameters</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#images">Images</a><ul>
+<li><a class="reference internal" href="#id5">YAML Structure</a></li>
+<li><a class="reference internal" href="#id6">Parameters</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#frontend">Frontend</a><ul>
+<li><a class="reference internal" href="#config-json">config.json</a></li>
+<li><a class="reference internal" href="#firebase-config-json">firebase-config.json</a></li>
+</ul>
+</li>
+</ul>
+</div><div id="ethical-ad-placement" data-ea-publisher="readthedocs"></div></div>
+  </aside>
+  <div class="rside-overlay js-menu" role="button" aria-label="Close Table of Contents" aria-controls="rside" aria-expanded="false"></div>
+  <main class="sy-main w-full max-sm:max-w-full print:pt-6">
+<div class="sy-breadcrumbs" role="navigation">
+  <div class="sy-breadcrumbs-inner flex items-center">
+    <div class="md:hidden mr-3">
+      <button class="js-menu" aria-label="Menu" type="button" aria-controls="lside" aria-expanded="false">
+        <i class="i-lucide menu"></i>
+      </button>
+    </div>
+    <ol class="flex-1" itemscope itemtype="https://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="../index.html"><span itemprop="name">Iris</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="1" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="index.html"><span itemprop="name">Getting started</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="2" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <strong itemprop="name">Configuration</strong>
+        <meta itemprop="position" content="3" />
+      </li></ol>
+    <div class="xl:hidden ml-1">
+      <button class="js-menu" aria-label="Show table of contents" type="button" aria-controls="rside"
+        aria-expanded="false">
+        <i class="i-lucide outdent"></i>
+      </button>
+    </div>
+  </div>
+</div><div class="flex flex-col break-words justify-between">
+      <div class="min-w-0 max-w-6xl px-6 pb-6 pt-8 xl:px-12">
+        <article class="yue" role="main">
+          <section id="configuration">
+<h1>Configuration<a class="headerlink" href="#configuration" title="Link to this heading">¶</a></h1>
+<p>This section details all the configurations available for each service.</p>
+<section id="api">
+<h2>API<a class="headerlink" href="#api" title="Link to this heading">¶</a></h2>
+<p>All the following configurations must be defined in a <strong>yaml file</strong>. By default, it’s in <cite>config.yaml</cite> which needs to be
+at the same place as the code.</p>
+<p>But you can change this path by defining the environment variable <cite>CONFIG_FILE_PATH</cite>.</p>
+<section id="firebase">
+<h3>Firebase<a class="headerlink" href="#firebase" title="Link to this heading">¶</a></h3>
+<section id="yaml-structure">
+<h4>YAML Structure<a class="headerlink" href="#yaml-structure" title="Link to this heading">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">firebase</span><span class="p">:</span>
+</span><span data-line="2">    <span class="n">credentials_file_path</span><span class="p">:</span>
+</span><span data-line="3">    <span class="n">project_id</span><span class="p">:</span>
+</span><span data-line="4">    <span class="n">mock</span><span class="p">:</span>
+</span><span data-line="5">        <span class="n">enabled</span><span class="p">:</span>
+</span><span data-line="6">        <span class="n">data_file_path</span><span class="p">:</span>
+</span></pre></div>
+</div>
+</section>
+<section id="parameters">
+<h4>Parameters<a class="headerlink" href="#parameters" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p><strong>firebase.credentials_file_path</strong> : <em>(Env variable : `FIREBASE_CREDENTIALS_FILE_PATH`)</em> - Path to the firebase credentials file</p></li>
+<li><p><strong>firebase.project_id</strong> : <em>(Env variable : `FIREBASE_PROJECT_ID`)</em> - Project id of the firebase</p></li>
+<li><p><strong>firebase.mock.enabled</strong> : <em>(Env variable : `FIREBASE_MOCK_ENABLED`)</em> - Set to <cite>true</cite> if you want to enable the mocks and do some specific tests.</p></li>
+<li><p><strong>firebase.mock.data_file_path</strong> : <em>(Env variable : `FIREBASE_MOCK_DATA_PATH`)</em> - Path to the mock resources</p></li>
+</ul>
+<p>To get the file defined in <cite>firebase.credentials_file_path</cite>, check <a class="reference external" href="https://firebase.google.com/docs/admin/setup?hl=fr#set-up-project-and-service-account">this Firebase documentation</a>
+which explains how to configure a service account.</p>
+<p>—</p>
+</section>
+</section>
+<section id="database">
+<h3>Database<a class="headerlink" href="#database" title="Link to this heading">¶</a></h3>
+<section id="id1">
+<h4>YAML Structure<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">database</span><span class="p">:</span>
+</span><span data-line="2">  <span class="n">mock</span><span class="p">:</span>
+</span><span data-line="3">    <span class="n">enabled</span><span class="p">:</span>
+</span><span data-line="4">    <span class="n">data_folder_path</span><span class="p">:</span>
+</span><span data-line="5">  <span class="n">mongo</span><span class="p">:</span>
+</span><span data-line="6">    <span class="n">uri</span><span class="p">:</span>
+</span><span data-line="7">    <span class="n">name</span><span class="p">:</span>
+</span></pre></div>
+</div>
+</section>
+<section id="id2">
+<h4>Parameters<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p><strong>database.mock.enabled</strong> : <em>(Env variable : `DATABASE_MOCK_ENABLED`)</em> - Set to <cite>true</cite> if you want to enable the mocks and do some specific tests.</p></li>
+<li><p><strong>database.mock.data_file_path</strong> : <em>(Env variable : `DATABASE_MOCK_DATA_PATH`)</em> - Path to the mock resources</p></li>
+<li><p><strong>database.mongo.uri</strong> : <em>(Env variable : `DATABASE_MONGO_URI`)</em> - URI path of the database</p></li>
+<li><p><strong>database.mongo.name</strong> : <em>(Env variable : `DATABASE_MONGO_NAME`)</em> - Name of the collection to use in Mongo.</p></li>
+</ul>
+<p>—</p>
+</section>
+</section>
+<section id="server">
+<h3>Server<a class="headerlink" href="#server" title="Link to this heading">¶</a></h3>
+<section id="id3">
+<h4>YAML Structure<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">server</span><span class="p">:</span>
+</span><span data-line="2">  <span class="n">expose</span><span class="p">:</span>
+</span><span data-line="3">  <span class="n">metrics_expose</span><span class="p">:</span>
+</span><span data-line="4">  <span class="n">origins_allowed</span><span class="p">:</span>
+</span><span data-line="5">  <span class="n">images_dir</span><span class="p">:</span>
+</span><span data-line="6">  <span class="n">images_base_url</span><span class="p">:</span>
+</span></pre></div>
+</div>
+</section>
+<section id="id4">
+<h4>Parameters<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p><strong>server.expose</strong> : <em>(Env variable : `SERVER_EXPOSE`)</em> - Port to expose the API. <em>Default 8080</em></p></li>
+<li><p><strong>server.metrics_expose</strong> : <em>(Env variable : `SERVER_METRICS_EXPOSE`)</em> - Port to expose the API metrics. <em>Default 2121</em></p></li>
+<li><p><strong>server.origins_allowed</strong> : List of the origins allowed to call the API</p></li>
+<li><p><strong>server.images_dir</strong> : <em>(Env variable : `SERVER_IMAGES_DIR`)</em> - Folder where the images will be stored</p></li>
+<li><p><strong>server.images_base_url</strong> : <em>(Env variable : `SERVER_IMAGES_BASE_URL`)</em> - Base path to call to get the images. By default need to be <cite>/v1/images</cite> if you use the API endpoint</p></li>
+</ul>
+<p>—</p>
+</section>
+</section>
+<section id="images">
+<h3>Images<a class="headerlink" href="#images" title="Link to this heading">¶</a></h3>
+<section id="id5">
+<h4>YAML Structure<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">images</span><span class="p">:</span>
+</span><span data-line="2">  <span class="n">maxImagesPerIdea</span><span class="p">:</span>
+</span><span data-line="3">  <span class="n">maxImagesPerComment</span><span class="p">:</span>
+</span><span data-line="4">  <span class="n">maxSize</span><span class="p">:</span>
+</span><span data-line="5">  <span class="n">acceptedExtensions</span><span class="p">:</span>
+</span></pre></div>
+</div>
+</section>
+<section id="id6">
+<h4>Parameters<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p><strong>images.maxImagesPerIdea</strong> : <em>(Env variable : `IMAGE_MAX_IMAGES_PER_IDEA`)</em> - Max number of images per idea</p></li>
+<li><p><strong>images.maxImagesPerComment</strong> : <em>(Env variable : `IMAGE_MAX_IMAGES_PER_COMMENT`)</em> - Max number of images per comment</p></li>
+<li><p><strong>images.maxSize</strong> : <em>(Env variable : `IMAGE_MAX_SIZE`)</em> - Image max size in bytes</p></li>
+<li><p><strong>images.acceptedExtensions</strong> : List of file extensions allowed for file upload.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="frontend">
+<h2>Frontend<a class="headerlink" href="#frontend" title="Link to this heading">¶</a></h2>
+<p>Two json configurations files are required:</p>
+<ul class="simple">
+<li><p><cite>config.json</cite></p></li>
+<li><p><cite>firebase-config.json</cite></p></li>
+</ul>
+<section id="config-json">
+<h3>config.json<a class="headerlink" href="#config-json" title="Link to this heading">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="p">{</span>
+</span><span data-line="2">  <span class="s2">&quot;apiBaseUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span data-line="3">  <span class="s2">&quot;appTitle&quot;</span><span class="p">:</span> <span class="s2">&quot; - &quot;</span><span class="p">,</span>
+</span><span data-line="4">  <span class="s2">&quot;appLoginTitle&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span data-line="5">  <span class="s2">&quot;appIcon&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+</span><span data-line="6"><span class="p">}</span>
+</span></pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>apiBaseUrl</strong> : <em>[Mandatory]</em> Base url of the Iris API</p></li>
+<li><p><strong>appTitle</strong> : <em>[Optional]</em> App title to display instead of the default one</p></li>
+<li><p><strong>appLoginTitle</strong> : <em>[Optional]</em> Login title to display instead of the default one</p></li>
+<li><p><strong>appIcon</strong> : <em>[Optional]</em> App icon to display instead of the default one</p></li>
+</ul>
+</section>
+<section id="firebase-config-json">
+<h3>firebase-config.json<a class="headerlink" href="#firebase-config-json" title="Link to this heading">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="p">{</span>
+</span><span data-line="2">  <span class="s2">&quot;apiKey&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span data-line="3">  <span class="s2">&quot;authDomain&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span data-line="4">  <span class="s2">&quot;databaseURL&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span data-line="5">  <span class="s2">&quot;projectId&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span data-line="6">  <span class="s2">&quot;storageBucket&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span data-line="7">  <span class="s2">&quot;messagingSenderId&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span data-line="8">  <span class="s2">&quot;appId&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+</span><span data-line="9"><span class="p">}</span>
+</span></pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>apiKey</strong> : <em>[Mandatory]</em> Firebase API key</p></li>
+<li><p><strong>authDomain</strong> : <em>[Mandatory]</em> Firebase Auth domain</p></li>
+<li><p><strong>databaseURL</strong> : <em>[Mandatory]</em> Firebase database URL</p></li>
+<li><p><strong>projectId</strong> : <em>[Mandatory]</em> Firebase project ID</p></li>
+<li><p><strong>storageBucket</strong> : <em>[Mandatory]</em> Firebase storage bucket</p></li>
+<li><p><strong>messagingSenderId</strong> : <em>[Mandatory]</em> Firebase messaging sender ID</p></li>
+<li><p><strong>appId</strong> : <em>[Mandatory]</em> Firebase app ID</p></li>
+</ul>
+<p>These configurations can be found in the Firebase console. Check <a class="reference external" href="https://firebase.google.com/docs/web/learn-more#config-object">this documentation</a>
+to know how to retrieve these informations.</p>
+</section>
+</section>
+</section>
+
+        </article><button class="back-to-top" type="button">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+  </svg>
+  <span>Back to top</span>
+</button><div class="navigation flex print:hidden"><div class="navigation-prev">
+    <a href="index.html">
+      <i class="i-lucide chevron-left"></i>
+      <div class="page-info">
+        <span>Previous</span><div class="title">Getting started</div></div>
+    </a>
+  </div><div class="navigation-next">
+    <a href="docker_compose.html">
+      <div class="page-info">
+        <span>Next</span>
+        <div class="title">Start with docker compose</div>
+      </div>
+      <i class="i-lucide chevron-right"></i>
+    </a>
+  </div></div></div>
+    </div>
+  </main>
+</div>
+<footer class="sy-foot">
+  <div class="sy-foot-inner sy-container mx-auto">
+    <div class="sy-foot-reserved md:flex justify-between items-center">
+      <div class="sy-foot-copyright"><p>2025, RoadTripMoustache</p>
+  
+  <p>
+    Made with
+    
+    <a href="https://www.sphinx-doc.org/">Sphinx</a> and
+    
+    <a href="https://shibuya.lepture.com">Shibuya theme</a>.
+  </p>
+</div>
+      <div class="sy-foot-socials"></div>
+    </div>
+  </div>
+</footer>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/shibuya.js?v=9b0e4dde"></script></body>
+</html>

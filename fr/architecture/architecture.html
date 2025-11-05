@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr" data-accent-color="violet" data-content_root="../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Comment ça marche ? - Iris documentation</title><link rel="shortcut icon" href="../_static/logo.ico"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Recherche" href="../search.html" /><link rel="next" title="Démarrage" href="../getting_started/index.html" /><link rel="prev" title="Introduction" href="../index.html" /><script>
+    function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
+    setColorMode(localStorage._theme||"auto");
+  </script><link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=e1a1ceaf" />
+    <link rel="stylesheet" type="text/css" href="../_static/shibuya.css?v=d140fbf8" />
+    <link media="print" rel="stylesheet" type="text/css" href="../_static/print.css?v=20ff2c19" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sy-f-text: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+  --sy-f-heading: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
+}
+</style>
+    <meta property="og:type" content="website"/><meta property="og:title" content="Comment ça marche ?"/>
+<meta name="twitter:card" content="summary"/>
+  
+</head>
+<body><div class="sy-head">
+  <div class="sy-head-blur"></div>
+  <div class="sy-head-inner sy-container mx-auto">
+    <a class="sy-head-brand" href="../index.html">
+      <img class="light-logo" src="../_static/logo.png" alt="Iris" height="28" loading="lazy" />
+      <img class="dark-logo" src="../_static/logo.png" alt="Iris" height="28" loading="lazy" />
+      <strong>Iris</strong>
+    </a>
+    <div class="sy-head-nav" id="head-nav">
+      <nav class="sy-head-links"></nav>
+      <div class="sy-head-extra flex items-center print:hidden"><form class="searchbox flex items-center" action="../search.html" method="get">
+  <input type="text" name="q" placeholder="Recherche" />
+  <kbd>/</kbd>
+</form><div class="nav-languages">
+  <button type="button">
+    <span class="md:hidden">Traductions</span>
+    <iconify-icon icon="lucide:languages"></iconify-icon>
+  </button>
+  <div class="nav-languages-choices">
+    <ul><li><a href="/">English</a></li><li><a href="/fr/">Français</a></li></ul>
+  </div>
+</div><div class="sy-head-socials"></div></div>
+    </div>
+    <div class="sy-head-actions flex items-center shrink-0 print:hidden"><button class="js-theme theme-switch flex items-center"
+data-aria-auto="Passer en mode clair"
+data-aria-light="Passer en mode sombre"
+data-aria-dark="Passer en mode automatique">
+<i class="i-lucide theme-icon"></i>
+</button><button class="md:hidden flex items-center js-menu" aria-label="Menu" type="button" aria-controls="head-nav" aria-expanded="false">
+        <div class="hamburger">
+          <span class="hamburger_1"></span>
+          <span class="hamburger_2"></span>
+          <span class="hamburger_3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="sy-page sy-container flex mx-auto">
+  <aside id="lside" class="sy-lside md:w-72 md:shrink-0 print:hidden">
+    <div class="sy-lside-inner md:sticky">
+      <div class="sy-scrollbar p-6">
+        <div class="globaltoc" data-expand-depth="0"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Comment ça marche ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">Démarrage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/configuration.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/docker_compose.html">Démarrer avec docker compose</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../questions/questions.html">Question fréquentes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/contribute.html">Contribution et support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/credits.html">Crédits</a></li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="lside-overlay js-menu" role="button" aria-label="Close left sidebar" aria-controls="lside" aria-expanded="false"></div>
+  <aside id="rside" class="sy-rside pb-3 w-64 shrink-0 order-last">
+    <button class="rside-close js-menu xl:hidden" aria-label="Close Table of Contents" type="button" aria-controls="rside" aria-expanded="false">
+      <i class="i-lucide close"></i>
+    </button>
+    <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>Sur cette page</h3><ul>
+<li><a class="reference internal" href="#supported-authentication-services">Syst&#232;mes d&#8217;authentification support&#233;s</a></li>
+<li><a class="reference internal" href="#supported-file-storages">Services de stockage de fichiers support&#233;s</a></li>
+<li><a class="reference internal" href="#supported-databases">Base de donn&#233;es support&#233;es</a></li>
+</ul>
+</div><div id="ethical-ad-placement" data-ea-publisher="readthedocs"></div></div>
+  </aside>
+  <div class="rside-overlay js-menu" role="button" aria-label="Close Table of Contents" aria-controls="rside" aria-expanded="false"></div>
+  <main class="sy-main w-full max-sm:max-w-full print:pt-6">
+<div class="sy-breadcrumbs" role="navigation">
+  <div class="sy-breadcrumbs-inner flex items-center">
+    <div class="md:hidden mr-3">
+      <button class="js-menu" aria-label="Menu" type="button" aria-controls="lside" aria-expanded="false">
+        <i class="i-lucide menu"></i>
+      </button>
+    </div>
+    <ol class="flex-1" itemscope itemtype="https://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="../index.html"><span itemprop="name">Iris</span></a>
+        <span>/</span>
+        <meta itemprop="position" content="1" />
+      </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <strong itemprop="name">Comment ça marche ?</strong>
+        <meta itemprop="position" content="2" />
+      </li></ol>
+    <div class="xl:hidden ml-1">
+      <button class="js-menu" aria-label="Show table of contents" type="button" aria-controls="rside"
+        aria-expanded="false">
+        <i class="i-lucide outdent"></i>
+      </button>
+    </div>
+  </div>
+</div><div class="flex flex-col break-words justify-between">
+      <div class="min-w-0 max-w-6xl px-6 pb-6 pt-8 xl:px-12">
+        <article class="yue" role="main">
+          <section id="how-does-it-work">
+<h1>Comment ça marche ?<a class="headerlink" href="#how-does-it-work" title="Lien vers cette rubrique">¶</a></h1>
+<figure class="align-center" id="id1">
+<img alt="../_images/structure.png" src="../_images/structure.png" />
+<figcaption>
+<p><span class="caption-text">Architecture d’Iris</span><a class="headerlink" href="#id1" title="Lien vers cette image">¶</a></p>
+</figcaption>
+</figure>
+<p>L’architecture d’Iris est assez simple.</p>
+<p><strong>Iris frontend</strong> exposes l’application web qui utilise le service d’authentification pour permettre à l’utilisateur de se connecter. Il utilise aussi Iris API pour gérer les idées et autres ressources.</p>
+<p><strong>Iris API</strong> exposes toutes les méthodes pour gérer les données utilisées par l’application web. Les endpoints de l’api sont protégées par le même  système d’authentification que le frontend, car attend le jeton de l’utilisateur. Il utilise aussi la base de données et le service de stockage d’images pour stocker données, images et informations.</p>
+<hr class="docutils" />
+<section id="supported-authentication-services">
+<h2>Systèmes d’authentification supportés<a class="headerlink" href="#supported-authentication-services" title="Lien vers cette rubrique">¶</a></h2>
+<p>Voici la liste des services d’authentification actuellement supportés par Iris :</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://firebase.google.com/docs/auth">Firebase Authentication</a></p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="supported-file-storages">
+<h2>Services de stockage de fichiers supportés<a class="headerlink" href="#supported-file-storages" title="Lien vers cette rubrique">¶</a></h2>
+<p>Voici la liste actuelle des services de stockage de fichiers supportés par Iris :</p>
+<ul class="simple">
+<li><p>Sur le serveur hébergeant l’API</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="supported-databases">
+<h2>Base de données supportées<a class="headerlink" href="#supported-databases" title="Lien vers cette rubrique">¶</a></h2>
+<p>Voici la liste actuelle des bases de données supportées par Iris :</p>
+<ul class="simple">
+<li><p>MongoDB</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>D’autres services d’authentification et de stockage de fichiers seront ajoutés dans le futur.</p>
+<p>Si vous voulez, <a class="reference internal" href="../contribute/contribute.html"><span class="doc">vous pouvez contribuer</span></a> à la demande ou l’implémentation de nouveaux services.</p>
+</div>
+</section>
+</section>
+
+        </article><button class="back-to-top" type="button">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+  </svg>
+  <span>Retour au sommet</span>
+</button><div class="navigation flex print:hidden"><div class="navigation-prev">
+    <a href="../index.html">
+      <i class="i-lucide chevron-left"></i>
+      <div class="page-info">
+        <span>Précédent</span><div class="title">Accueil</div></div>
+    </a>
+  </div><div class="navigation-next">
+    <a href="../getting_started/index.html">
+      <div class="page-info">
+        <span>Suivant</span>
+        <div class="title">Démarrage</div>
+      </div>
+      <i class="i-lucide chevron-right"></i>
+    </a>
+  </div></div></div>
+    </div>
+  </main>
+</div>
+<footer class="sy-foot">
+  <div class="sy-foot-inner sy-container mx-auto">
+    <div class="sy-foot-reserved md:flex justify-between items-center">
+      <div class="sy-foot-copyright"><p>2025, RoadTripMoustache</p>
+  
+  <p>
+    Made with
+    
+    <a href="https://www.sphinx-doc.org/">Sphinx</a> and
+    
+    <a href="https://shibuya.lepture.com">Shibuya theme</a>.
+  </p>
+</div>
+      <div class="sy-foot-socials"></div>
+    </div>
+  </div>
+</footer>
+      <script src="../_static/documentation_options.js?v=d1a510d7"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=e6b791cb"></script>
+      <script src="../_static/shibuya.js?v=9b0e4dde"></script></body>
+</html>
