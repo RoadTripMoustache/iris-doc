@@ -31,7 +31,7 @@ html_theme = 'shibuya'
 html_static_path = ['_static']
 html_context = {
     'current_language': 'en',
-    'languages': [['English', '/'], ['Français', '/fr/']],
+    'languages': [['English', '/iris-doc/'], ['Français', '/iris-doc/fr/']],
 }
 html_logo = "_static/logo.png"
 html_favicon = '_static/logo.ico'
