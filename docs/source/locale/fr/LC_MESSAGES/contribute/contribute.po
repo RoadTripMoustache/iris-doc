@@ -21,35 +21,35 @@ msgstr ""
 
 #: ../../source/contribute/contribute.rst:2
 msgid "Contribute and Support"
-msgstr ""
+msgstr "Contribution et support"
 
 #: ../../source/contribute/contribute.rst:4
 msgid "You have many ways to contribute in this project, you can :"
-msgstr ""
+msgstr "Il y a plusieurs manières pour que vous puissiez contribuer au projet, vous pouvez :"
 
 #: ../../source/contribute/contribute.rst:6
 msgid "Open issues to :"
-msgstr ""
+msgstr "Ouvrir des issues pour :"
 
 #: ../../source/contribute/contribute.rst:7
 msgid "report an issue"
-msgstr ""
+msgstr "remonter un problème"
 
 #: ../../source/contribute/contribute.rst:8
 msgid "request an improvement"
-msgstr ""
+msgstr "demander une amélioration"
 
 #: ../../source/contribute/contribute.rst:9
 msgid "ask some questions"
-msgstr ""
+msgstr "poser des questions"
 
 #: ../../source/contribute/contribute.rst:10
 msgid "Discuss on these opened issues"
-msgstr ""
+msgstr "Échanger concernant les issues ouvertes"
 
 #: ../../source/contribute/contribute.rst:11
 msgid "Contribute in the projects or the documentation"
-msgstr ""
+msgstr "Contribuer sur les projets ou leur documentation"
 
 #: ../../source/contribute/contribute.rst:12
 msgid ""
@@ -74,8 +74,9 @@ msgid ""
 "And if you want to support the project, **leave a star on our github "
 "projects** !"
 msgstr ""
+"Et si vous voulez supporter le projet, **laissez une étoile sur nos projets github** !"
 
 #: ../../source/contribute/contribute.rst:18
 msgid "Every action you can take will help Iris to live and grow !"
-msgstr ""
+msgstr "Chaque action que vous pourrez faire aideront Iris à vivre et grandir !"
 

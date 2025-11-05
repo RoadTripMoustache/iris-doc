@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Iris \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-04 19:53-0500\n"
+"POT-Creation-Date: 2025-11-04 20:57-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -180,14 +180,14 @@ msgstr ""
 
 #: ../../source/getting_started/configuration.rst:118
 msgid ""
-"**images.maxSize** : *(Env variable : `IMAGE_MAX_SIZE`)* - Image max site"
+"**images.maxSize** : *(Env variable : `IMAGE_MAX_SIZE`)* - Image max size"
 " in bytes"
 msgstr ""
 
 #: ../../source/getting_started/configuration.rst:119
 msgid ""
 "**images.acceptedExtensions** : List of file extensions allowed for file "
-"update."
+"upload."
 msgstr ""
 
 #: ../../source/getting_started/configuration.rst:125
@@ -268,4 +268,15 @@ msgid ""
 "documentation <https://firebase.google.com/docs/web/learn-more#config-"
 "object>`__ to know how to retrieve these informations."
 msgstr ""
+
+#~ msgid ""
+#~ "**images.maxSize** : *(Env variable : "
+#~ "`IMAGE_MAX_SIZE`)* - Image max site in"
+#~ " bytes"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**images.acceptedExtensions** : List of file"
+#~ " extensions allowed for file update."
+#~ msgstr ""
 

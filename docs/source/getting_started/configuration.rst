@@ -115,8 +115,8 @@ Parameters
 
 - **images.maxImagesPerIdea** : *(Env variable : `IMAGE_MAX_IMAGES_PER_IDEA`)* - Max number of images per idea
 - **images.maxImagesPerComment** : *(Env variable : `IMAGE_MAX_IMAGES_PER_COMMENT`)* - Max number of images per comment
-- **images.maxSize** : *(Env variable : `IMAGE_MAX_SIZE`)* - Image max site in bytes
-- **images.acceptedExtensions** : List of file extensions allowed for file update.
+- **images.maxSize** : *(Env variable : `IMAGE_MAX_SIZE`)* - Image max size in bytes
+- **images.acceptedExtensions** : List of file extensions allowed for file upload.
 
 -------
 

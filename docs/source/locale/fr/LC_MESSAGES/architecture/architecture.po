@@ -21,15 +21,15 @@ msgstr ""
 
 #: ../../source/architecture/architecture.rst:2
 msgid "How does it work?"
-msgstr ""
+msgstr "Comment ça marche ?"
 
 #: ../../source/architecture/architecture.rst:7
 msgid "*Architecture of the iris service*"
-msgstr ""
+msgstr "Architecture d'Iris"
 
 #: ../../source/architecture/architecture.rst:9
 msgid "The Iris architecture is quite simple."
-msgstr ""
+msgstr "L'architecture d'Iris est assez simple."
 
 #: ../../source/architecture/architecture.rst:11
 msgid ""
@@ -37,6 +37,9 @@ msgid ""
 " service to log in the user and validate the user token. It also uses the"
 " Iris API to manage the ideas and other resources."
 msgstr ""
+"**Iris frontend** exposes l'application web qui utilise le service d'authentification"
+" pour permettre à l'utilisateur de se connecter. Il utilise aussi Iris API"
+" pour gérer les idées et autres ressources."
 
 #: ../../source/architecture/architecture.rst:14
 msgid ""
@@ -45,14 +48,19 @@ msgid ""
 "token. And it uses a database and image storage service to store all the "
 "data and informations."
 msgstr ""
+"**Iris API** exposes toutes les méthodes pour gérer les données utilisées"
+" par l'application web. Les endpoints de l'api sont protégées par le même "
+" système d'authentification que le frontend, car attend le jeton de l'utilisateur."
+" Il utilise aussi la base de données et le service de stockage d'images pour"
+" stocker données, images et informations."
 
 #: ../../source/architecture/architecture.rst:21
 msgid "Supported authentication services"
-msgstr ""
+msgstr "Systèmes d'authentification supportés"
 
 #: ../../source/architecture/architecture.rst:23
 msgid "Here is the current list of authentication services supported by Iris :"
-msgstr ""
+msgstr "Voici la liste des services d'authentification actuellement supportés par Iris :"
 
 #: ../../source/architecture/architecture.rst:25
 msgid "`Firebase Authentication <https://firebase.google.com/docs/auth>`__"
@@ -60,23 +68,23 @@ msgstr ""
 
 #: ../../source/architecture/architecture.rst:30
 msgid "Supported file storages"
-msgstr ""
+msgstr "Services de stockage de fichiers supportés"
 
 #: ../../source/architecture/architecture.rst:32
 msgid "Here is the current list of file storages supported by Iris :"
-msgstr ""
+msgstr "Voici la liste actuelle des services de stockage de fichiers supportés par Iris :"
 
 #: ../../source/architecture/architecture.rst:34
 msgid "In the server hosting the API"
-msgstr ""
+msgstr "Sur le serveur hébergeant l'API"
 
 #: ../../source/architecture/architecture.rst:39
 msgid "Supported databases"
-msgstr ""
+msgstr "Base de données supportées"
 
 #: ../../source/architecture/architecture.rst:41
 msgid "Here is the current list of databases supported by Iris :"
-msgstr ""
+msgstr "Voici la liste actuelle des bases de données supportées par Iris :"
 
 #: ../../source/architecture/architecture.rst:43
 msgid "MongoDB"
@@ -87,10 +95,13 @@ msgid ""
 "More authentication services and file storage providers will be added in "
 "the future."
 msgstr ""
+"D'autres services d'authentification et de stockage de fichiers seront ajoutés"
+" dans le futur."
 
 #: ../../source/architecture/architecture.rst:49
 msgid ""
 "If you want, :doc:`you can contribute<../contribute/contribute>` to "
 "request and/or implement them."
 msgstr ""
-
+"Si vous voulez, :doc:`vous pouvez contribuer<../contribute/contribute>` à "
+"la demande ou l'implémentation de nouveaux services."

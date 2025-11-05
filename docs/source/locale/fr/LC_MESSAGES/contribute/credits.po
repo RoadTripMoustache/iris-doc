@@ -21,15 +21,15 @@ msgstr ""
 
 #: ../../source/contribute/credits.rst:2
 msgid "Credits"
-msgstr ""
+msgstr "Crédits"
 
 #: ../../source/contribute/credits.rst:4
 msgid "Thanks to all who help in this project !"
-msgstr ""
+msgstr "Merci à tout ceux qui ont participé sur ce projet !"
 
 #: ../../source/contribute/credits.rst:7
 msgid "Contributors"
-msgstr ""
+msgstr "Contributeurs"
 
 #: ../../source/contribute/credits.rst:9
 msgid "Adaendra Avatar"

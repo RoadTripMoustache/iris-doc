@@ -21,53 +21,61 @@ msgstr ""
 
 #: ../../source/index.rst:2
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 #: ../../source/index.rst:4
 msgid ""
 "**Iris** is a web application and an api to help you to get feedbacks "
 "from your users."
-msgstr ""
+msgstr "**Iris** est une application web et une api pour vous aider à récupérer des retours de vos utilisateurs."
 
 #: ../../source/index.rst:6
 msgid "These feedbacks can be :"
-msgstr ""
+msgstr "Ces retours peuvent être :"
 
 #: ../../source/index.rst:8
 msgid "**bug** - If a user wants to show an issue in the application"
-msgstr ""
+msgstr "**bug** - Si un client a trouvé un problème dans l'application"
 
 #: ../../source/index.rst:9
 msgid ""
 "**enhancement** - If a user wants to suggest a new feature or an "
 "improvement of an existing one"
 msgstr ""
+"**amélioration** - Si un utilisateur veut proposer une amélioration ou une fonctionnalité"
+" n'existant pas actuellement"
 
 #: ../../source/index.rst:14
 msgid "*Homescreen once a user is logged in*"
-msgstr ""
+msgstr "*Écran d'accueil quand un utilisateur est connecté*"
 
 #: ../../source/index.rst:16
 msgid ""
 "To make the feedback process easy and reusable for any kind of service or"
 " application, 2 things are done :"
 msgstr ""
+"Pour rendre le processus de retour d'information simple et réutilisable pour tout type de service ou d'application,"
+" deux choses sont faites :"
 
 #: ../../source/index.rst:18
 msgid ""
 "**Customizable authentication** - To be able to reuse the same "
 "authentication as in your application"
 msgstr ""
+"**Authentification personnalisable** - Pour permettre de réutiliser le même service d'authentification"
+" que celui présent dans votre application"
 
 #: ../../source/index.rst:19
 msgid ""
 "**Customizable logo and title** - To let your user know that this "
 "platform is related to you, your company or your application"
 msgstr ""
+"**Titre et logo personnalisable** - Pour mettre la plateforme avec le nom et le logo de votre service / compagnie,"
+" afin que les clients sachent à qui c'est lié"
 
 #: ../../source/index.rst:24
 msgid "*Customized Iris instance for the Guide Nestor application*"
-msgstr ""
+msgstr "*Instance d'Iris personnalisée pour l'application Guide Nestor*"
 
 #~ msgid "Iris"
 #~ msgstr ""

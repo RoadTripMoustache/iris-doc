@@ -21,13 +21,15 @@ msgstr ""
 
 #: ../../source/getting_started/index.rst:2
 msgid "Getting started"
-msgstr ""
+msgstr "Démarrage"
 
 #: ../../source/getting_started/index.rst:4
 msgid ""
 "In this section, we will see **how to configure and start** on `Docker "
 "Compose <https://docs.docker.com/compose/>`__ ."
 msgstr ""
+"Dans cette section nous allons voir **comment configurer et démarrer** sur `Docker "
+"Compose <https://docs.docker.com/compose/>`__ ."
 
 #: ../../source/getting_started/index.rst:6
 msgid ""
@@ -35,16 +37,21 @@ msgid ""
 "available, then give all the commands and code templates to help you "
 "start the application."
 msgstr ""
+"Nous allons faire un tour des :doc:`configurations<configuration>` disponibles,"
+" puis voir tous les modèles et commandes pour démarrer l'application."
 
 #: ../../source/getting_started/index.rst:10
 msgid ""
 "Other configurations like in Kubernetes are possible, we only show a few "
 "of them currently."
 msgstr ""
+"D'autres configurations comme Kubernetes sont possibles, on va juste en montrer quelques un ici."
 
 #: ../../source/getting_started/index.rst:12
 msgid ""
 ":doc:`You can contribute<../contribute/contribute>` to improve this "
 "documentation and add more ways to start Iris."
 msgstr ""
+":doc:`Vous pouvez contribuer<../contribute/contribute>` pour améliorer cette documentation "
+"et ajouter d'autres manière de démarrer Iris."
 

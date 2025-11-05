@@ -21,13 +21,15 @@ msgstr ""
 
 #: ../../source/getting_started/docker_compose.rst:2
 msgid "Start with docker compose"
-msgstr ""
+msgstr "Démarrer avec docker compose"
 
 #: ../../source/getting_started/docker_compose.rst:4
 msgid ""
 "To start with docker compose, you can use the following template to help "
 "you. It contains the API and the frontend part."
 msgstr ""
+"Pour démarrer avec docker compose, vous pouvez utiliser le modèle suivant"
+" pour vous aider. Il contient l'api et l'application web."
 
 #: ../../source/getting_started/docker_compose.rst:44
 msgid ""
@@ -36,18 +38,23 @@ msgid ""
 "<https://hub.docker.com/repositories/roadtripmoustache>`__... and you're "
 "ready to go !"
 msgstr ""
+"Modifiez certaines configurations comme où se trouve vos fichiers de configuration, "
+"renommer le réseau, changer `les versions des images "
+"<https://hub.docker.com/repositories/roadtripmoustache>`__... et vous êtes prêts !"
 
 #: ../../source/getting_started/docker_compose.rst:49
 msgid "**Don't forget to setup the MongoDB instance !**"
-msgstr ""
+msgstr "**N'oubliez pas de configurer une instance MongoDB !**"
 
 #: ../../source/getting_started/docker_compose.rst:51
 msgid ""
 "There's no MongoDB instance in this docker compose yaml template, but "
 "it's mandatory to make it work correctly."
 msgstr ""
+"Il n'y a pas d'instance de MongoDB dans ce modèle, mais il est obligatoire "
+"de l'avoir pour fonctionner correctement."
 
 #: ../../source/getting_started/docker_compose.rst:53
 msgid "Then use the following command to start the services."
-msgstr ""
+msgstr "Puis utilise la commande suivante pour démarrer les services."
 
