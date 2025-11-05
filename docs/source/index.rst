@@ -33,3 +33,4 @@ To make the feedback process easy and reusable for any kind of service or applic
    getting_started/index
    questions/questions
    contribute/contribute
+   contribute/credits
