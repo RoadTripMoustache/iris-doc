@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, RoadTripMoustache
+# This file is distributed under the same license as the Iris package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Iris \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-04 19:53-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/getting_started/docker_compose.rst:2
+msgid "Start with docker compose"
+msgstr ""
+
+#: ../../source/getting_started/docker_compose.rst:4
+msgid ""
+"To start with docker compose, you can use the following template to help "
+"you. It contains the API and the frontend part."
+msgstr ""
+
+#: ../../source/getting_started/docker_compose.rst:44
+msgid ""
+"Update some configurations like the exposed ports, where your config "
+"files are, rename the network, change `the images versions "
+"<https://hub.docker.com/repositories/roadtripmoustache>`__... and you're "
+"ready to go !"
+msgstr ""
+
+#: ../../source/getting_started/docker_compose.rst:49
+msgid "**Don't forget to setup the MongoDB instance !**"
+msgstr ""
+
+#: ../../source/getting_started/docker_compose.rst:51
+msgid ""
+"There's no MongoDB instance in this docker compose yaml template, but "
+"it's mandatory to make it work correctly."
+msgstr ""
+
+#: ../../source/getting_started/docker_compose.rst:53
+msgid "Then use the following command to start the services."
+msgstr ""
+
