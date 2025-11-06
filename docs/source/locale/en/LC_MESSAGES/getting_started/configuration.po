@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Iris \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-04 20:57-0500\n"
+"POT-Creation-Date: 2025-11-06 07:38-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -52,6 +52,7 @@ msgstr ""
 #: ../../source/getting_started/configuration.rst:48
 #: ../../source/getting_started/configuration.rst:75
 #: ../../source/getting_started/configuration.rst:102
+#: ../../source/getting_started/configuration.rst:128
 msgid "YAML Structure"
 msgstr ""
 
@@ -59,6 +60,7 @@ msgstr ""
 #: ../../source/getting_started/configuration.rst:62
 #: ../../source/getting_started/configuration.rst:88
 #: ../../source/getting_started/configuration.rst:114
+#: ../../source/getting_started/configuration.rst:137
 msgid "Parameters"
 msgstr ""
 
@@ -98,6 +100,7 @@ msgstr ""
 #: ../../source/getting_started/configuration.rst:42
 #: ../../source/getting_started/configuration.rst:69
 #: ../../source/getting_started/configuration.rst:96
+#: ../../source/getting_started/configuration.rst:122
 msgid "---"
 msgstr ""
 
@@ -191,78 +194,86 @@ msgid ""
 msgstr ""
 
 #: ../../source/getting_started/configuration.rst:125
-msgid "Frontend"
+msgid "Admin"
 msgstr ""
 
-#: ../../source/getting_started/configuration.rst:127
-msgid "Two json configurations files are required:"
-msgstr ""
-
-#: ../../source/getting_started/configuration.rst:129
-msgid "`config.json`"
-msgstr ""
-
-#: ../../source/getting_started/configuration.rst:130
-msgid "`firebase-config.json`"
-msgstr ""
-
-#: ../../source/getting_started/configuration.rst:133
-msgid "config.json"
-msgstr ""
-
-#: ../../source/getting_started/configuration.rst:144
-msgid "**apiBaseUrl** : *[Mandatory]* Base url of the Iris API"
+#: ../../source/getting_started/configuration.rst:139
+msgid "**admin.defaultList** : List of default administrator of the Iris instance"
 msgstr ""
 
 #: ../../source/getting_started/configuration.rst:145
+msgid "Frontend"
+msgstr ""
+
+#: ../../source/getting_started/configuration.rst:147
+msgid "Two json configurations files are required:"
+msgstr ""
+
+#: ../../source/getting_started/configuration.rst:149
+msgid "`config.json`"
+msgstr ""
+
+#: ../../source/getting_started/configuration.rst:150
+msgid "`firebase-config.json`"
+msgstr ""
+
+#: ../../source/getting_started/configuration.rst:153
+msgid "config.json"
+msgstr ""
+
+#: ../../source/getting_started/configuration.rst:164
+msgid "**apiBaseUrl** : *[Mandatory]* Base url of the Iris API"
+msgstr ""
+
+#: ../../source/getting_started/configuration.rst:165
 msgid ""
 "**appTitle** : *[Optional]* App title to display instead of the default "
 "one"
 msgstr ""
 
-#: ../../source/getting_started/configuration.rst:146
+#: ../../source/getting_started/configuration.rst:166
 msgid ""
 "**appLoginTitle** : *[Optional]* Login title to display instead of the "
 "default one"
 msgstr ""
 
-#: ../../source/getting_started/configuration.rst:147
+#: ../../source/getting_started/configuration.rst:167
 msgid "**appIcon** : *[Optional]* App icon to display instead of the default one"
 msgstr ""
 
-#: ../../source/getting_started/configuration.rst:151
+#: ../../source/getting_started/configuration.rst:171
 msgid "firebase-config.json"
 msgstr ""
 
-#: ../../source/getting_started/configuration.rst:165
+#: ../../source/getting_started/configuration.rst:185
 msgid "**apiKey** : *[Mandatory]* Firebase API key"
 msgstr ""
 
-#: ../../source/getting_started/configuration.rst:166
+#: ../../source/getting_started/configuration.rst:186
 msgid "**authDomain** : *[Mandatory]* Firebase Auth domain"
 msgstr ""
 
-#: ../../source/getting_started/configuration.rst:167
+#: ../../source/getting_started/configuration.rst:187
 msgid "**databaseURL** : *[Mandatory]* Firebase database URL"
 msgstr ""
 
-#: ../../source/getting_started/configuration.rst:168
+#: ../../source/getting_started/configuration.rst:188
 msgid "**projectId** : *[Mandatory]* Firebase project ID"
 msgstr ""
 
-#: ../../source/getting_started/configuration.rst:169
+#: ../../source/getting_started/configuration.rst:189
 msgid "**storageBucket** : *[Mandatory]* Firebase storage bucket"
 msgstr ""
 
-#: ../../source/getting_started/configuration.rst:170
+#: ../../source/getting_started/configuration.rst:190
 msgid "**messagingSenderId** : *[Mandatory]* Firebase messaging sender ID"
 msgstr ""
 
-#: ../../source/getting_started/configuration.rst:171
+#: ../../source/getting_started/configuration.rst:191
 msgid "**appId** : *[Mandatory]* Firebase app ID"
 msgstr ""
 
-#: ../../source/getting_started/configuration.rst:173
+#: ../../source/getting_started/configuration.rst:193
 msgid ""
 "These configurations can be found in the Firebase console. Check `this "
 "documentation <https://firebase.google.com/docs/web/learn-more#config-"
