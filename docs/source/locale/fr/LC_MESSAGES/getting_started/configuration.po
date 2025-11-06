@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Iris \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-04 19:53-0500\n"
+"POT-Creation-Date: 2025-11-06 07:38-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -25,7 +25,9 @@ msgstr "Configuration"
 
 #: ../../source/getting_started/configuration.rst:5
 msgid "This section details all the configurations available for each service."
-msgstr "Cette section détaille toutes les configurations disponibles pour chaque service."
+msgstr ""
+"Cette section détaille toutes les configurations disponibles pour chaque "
+"service."
 
 #: ../../source/getting_started/configuration.rst:8
 msgid "API"
@@ -38,16 +40,16 @@ msgid ""
 " code."
 msgstr ""
 "Toutes les configurations doivent être définies dans un **fichier yaml**."
-" Par défaut c'est dans `config.yaml` qui a besoin d'être dans le dossier"
-" où le code est exécuté."
+" Par défaut c'est dans `config.yaml` qui a besoin d'être dans le dossier "
+"où le code est exécuté."
 
 #: ../../source/getting_started/configuration.rst:13
 msgid ""
 "But you can change this path by defining the environment variable "
 "`CONFIG_FILE_PATH`."
 msgstr ""
-"Mais vous pouvez changer ce chemin en définissant la variable d'environnement"
-" `CONFIG_FILE_PATH`."
+"Mais vous pouvez changer ce chemin en définissant la variable "
+"d'environnement `CONFIG_FILE_PATH`."
 
 #: ../../source/getting_started/configuration.rst:16
 msgid "Firebase"
@@ -57,6 +59,7 @@ msgstr ""
 #: ../../source/getting_started/configuration.rst:48
 #: ../../source/getting_started/configuration.rst:75
 #: ../../source/getting_started/configuration.rst:102
+#: ../../source/getting_started/configuration.rst:128
 msgid "YAML Structure"
 msgstr "Structure YAML"
 
@@ -64,6 +67,7 @@ msgstr "Structure YAML"
 #: ../../source/getting_started/configuration.rst:62
 #: ../../source/getting_started/configuration.rst:88
 #: ../../source/getting_started/configuration.rst:114
+#: ../../source/getting_started/configuration.rst:137
 msgid "Parameters"
 msgstr "Paramètres"
 
@@ -74,23 +78,25 @@ msgid ""
 "file"
 msgstr ""
 "**firebase.credentials_file_path** : *(Variable d'environnement : "
-"`FIREBASE_CREDENTIALS_FILE_PATH`)* - Chemin vers le fichier d'identifiants firebase"
+"`FIREBASE_CREDENTIALS_FILE_PATH`)* - Chemin vers le fichier "
+"d'identifiants firebase"
 
 #: ../../source/getting_started/configuration.rst:35
 msgid ""
 "**firebase.project_id** : *(Env variable : `FIREBASE_PROJECT_ID`)* - "
 "Project id of the firebase"
 msgstr ""
-"**firebase.project_id** : *(Variable d'environnement : `FIREBASE_PROJECT_ID`)* - "
-"Identifiant du projet firebase"
+"**firebase.project_id** : *(Variable d'environnement : "
+"`FIREBASE_PROJECT_ID`)* - Identifiant du projet firebase"
 
 #: ../../source/getting_started/configuration.rst:36
 msgid ""
 "**firebase.mock.enabled** : *(Env variable : `FIREBASE_MOCK_ENABLED`)* - "
 "Set to `true` if you want to enable the mocks and do some specific tests."
 msgstr ""
-"**firebase.mock.enabled** : *(Variable d'environnement : `FIREBASE_MOCK_ENABLED`)* - "
-"A mettre à `true` si vous voulez activez les mocks pour faire des tests spécifiques."
+"**firebase.mock.enabled** : *(Variable d'environnement : "
+"`FIREBASE_MOCK_ENABLED`)* - A mettre à `true` si vous voulez activez les "
+"mocks pour faire des tests spécifiques."
 
 #: ../../source/getting_started/configuration.rst:37
 msgid ""
@@ -107,14 +113,15 @@ msgid ""
 "<https://firebase.google.com/docs/admin/setup?hl=fr#set-up-project-and-"
 "service-account>`__ which explains how to configure a service account."
 msgstr ""
-"Pour récupérer le fichier définit dans `firebase.credentials_file_path`, regardez `cette "
-"documentation Firebase "
+"Pour récupérer le fichier définit dans `firebase.credentials_file_path`, "
+"regardez `cette documentation Firebase "
 "<https://firebase.google.com/docs/admin/setup?hl=fr#set-up-project-and-"
 "service-account>`__ qui explique comment configure un service account."
 
 #: ../../source/getting_started/configuration.rst:42
 #: ../../source/getting_started/configuration.rst:69
 #: ../../source/getting_started/configuration.rst:96
+#: ../../source/getting_started/configuration.rst:122
 msgid "---"
 msgstr ""
 
@@ -127,8 +134,9 @@ msgid ""
 "**database.mock.enabled** : *(Env variable : `DATABASE_MOCK_ENABLED`)* - "
 "Set to `true` if you want to enable the mocks and do some specific tests."
 msgstr ""
-"**database.mock.enabled** : *(Variable d'environnement : `DATABASE_MOCK_ENABLED`)* - "
-"A mettre à `true` si vous voulez activer les mocks et faire des tests spécifiques."
+"**database.mock.enabled** : *(Variable d'environnement : "
+"`DATABASE_MOCK_ENABLED`)* - A mettre à `true` si vous voulez activer les "
+"mocks et faire des tests spécifiques."
 
 #: ../../source/getting_started/configuration.rst:65
 msgid ""
@@ -143,16 +151,16 @@ msgid ""
 "**database.mongo.uri** : *(Env variable : `DATABASE_MONGO_URI`)* - URI "
 "path of the database"
 msgstr ""
-"**database.mongo.uri** : *(Variable d'environnement : `DATABASE_MONGO_URI`)* - "
-"URI pour se connecter à la base de données"
+"**database.mongo.uri** : *(Variable d'environnement : "
+"`DATABASE_MONGO_URI`)* - URI pour se connecter à la base de données"
 
 #: ../../source/getting_started/configuration.rst:67
 msgid ""
 "**database.mongo.name** : *(Env variable : `DATABASE_MONGO_NAME`)* - Name"
 " of the collection to use in Mongo."
 msgstr ""
-"**database.mongo.name** : *(Variable d'environnement : `DATABASE_MONGO_NAME`)* - "
-" Nom de la collection à utiliser dans Mongo."
+"**database.mongo.name** : *(Variable d'environnement : "
+"`DATABASE_MONGO_NAME`)* -  Nom de la collection à utiliser dans Mongo."
 
 #: ../../source/getting_started/configuration.rst:72
 msgid "Server"
@@ -163,28 +171,31 @@ msgid ""
 "**server.expose** : *(Env variable : `SERVER_EXPOSE`)* - Port to expose "
 "the API. *Default 8080*"
 msgstr ""
-"**server.expose** : *(Variable d'environnement : `SERVER_EXPOSE`)* - "
-"Port exposant l'API. *Défaut 8080*"
+"**server.expose** : *(Variable d'environnement : `SERVER_EXPOSE`)* - Port"
+" exposant l'API. *Défaut 8080*"
 
 #: ../../source/getting_started/configuration.rst:91
 msgid ""
 "**server.metrics_expose** : *(Env variable : `SERVER_METRICS_EXPOSE`)* - "
 "Port to expose the API metrics. *Default 2121*"
 msgstr ""
-"**server.metrics_expose** : *(Variable d'environnement : `SERVER_METRICS_EXPOSE`)* - "
-"Port pour exposer les métriques de l'API. *Défaut 2121*"
+"**server.metrics_expose** : *(Variable d'environnement : "
+"`SERVER_METRICS_EXPOSE`)* - Port pour exposer les métriques de l'API. "
+"*Défaut 2121*"
 
 #: ../../source/getting_started/configuration.rst:92
 msgid "**server.origins_allowed** : List of the origins allowed to call the API"
-msgstr "**server.origins_allowed** : Liste des origines autorisées pour appeler l'API"
+msgstr ""
+"**server.origins_allowed** : Liste des origines autorisées pour appeler "
+"l'API"
 
 #: ../../source/getting_started/configuration.rst:93
 msgid ""
 "**server.images_dir** : *(Env variable : `SERVER_IMAGES_DIR`)* - Folder "
 "where the images will be stored"
 msgstr ""
-"**server.images_dir** : *(Variable d'environnement : `SERVER_IMAGES_DIR`)* - "
-"Dossier où les images doivent être stockées"
+"**server.images_dir** : *(Variable d'environnement : "
+"`SERVER_IMAGES_DIR`)* - Dossier où les images doivent être stockées"
 
 #: ../../source/getting_started/configuration.rst:94
 msgid ""
@@ -192,8 +203,9 @@ msgid ""
 "- Base path to call to get the images. By default need to be `/v1/images`"
 " if you use the API endpoint"
 msgstr ""
-"**server.images_base_url** : *(Variable d'environnement : `SERVER_IMAGES_BASE_URL`)* "
-"- Base de l'URL pour récupérer les images. Par défaut, cela doit être `/v1/images` si vous utilisez l'endpoint de l'API"
+"**server.images_base_url** : *(Variable d'environnement : "
+"`SERVER_IMAGES_BASE_URL`)* - Base de l'URL pour récupérer les images. Par"
+" défaut, cela doit être `/v1/images` si vous utilisez l'endpoint de l'API"
 
 #: ../../source/getting_started/configuration.rst:99
 msgid "Images"
@@ -213,103 +225,120 @@ msgid ""
 "`IMAGE_MAX_IMAGES_PER_COMMENT`)* - Max number of images per comment"
 msgstr ""
 "**images.maxImagesPerComment** : *(Variable d'environnement : "
-"`IMAGE_MAX_IMAGES_PER_COMMENT`)* - Nombre maximum d'images par commentaire"
+"`IMAGE_MAX_IMAGES_PER_COMMENT`)* - Nombre maximum d'images par "
+"commentaire"
 
 #: ../../source/getting_started/configuration.rst:118
 msgid ""
 "**images.maxSize** : *(Env variable : `IMAGE_MAX_SIZE`)* - Image max size"
 " in bytes"
 msgstr ""
-"**images.maxSize** : *(Variable d'environnement : `IMAGE_MAX_SIZE`)* - Taille maximale des images en octets"
+"**images.maxSize** : *(Variable d'environnement : `IMAGE_MAX_SIZE`)* - "
+"Taille maximale des images en octets"
 
 #: ../../source/getting_started/configuration.rst:119
 msgid ""
 "**images.acceptedExtensions** : List of file extensions allowed for file "
 "upload."
 msgstr ""
-"**images.acceptedExtensions** : Liste des extensions de fichier autorisées."
+"**images.acceptedExtensions** : Liste des extensions de fichier "
+"autorisées."
 
 #: ../../source/getting_started/configuration.rst:125
+msgid "Admin"
+msgstr ""
+
+#: ../../source/getting_started/configuration.rst:139
+msgid "**admin.defaultList** : List of default administrator of the Iris instance"
+msgstr "**admin.defaultList** : Liste d'administrateur par défaut"
+
+#: ../../source/getting_started/configuration.rst:145
 msgid "Frontend"
 msgstr "Frontend"
 
-#: ../../source/getting_started/configuration.rst:127
+#: ../../source/getting_started/configuration.rst:147
 msgid "Two json configurations files are required:"
 msgstr "Deux fichiers de configuration json sont requis:"
 
-#: ../../source/getting_started/configuration.rst:129
+#: ../../source/getting_started/configuration.rst:149
 msgid "`config.json`"
 msgstr ""
 
-#: ../../source/getting_started/configuration.rst:130
+#: ../../source/getting_started/configuration.rst:150
 msgid "`firebase-config.json`"
 msgstr ""
 
-#: ../../source/getting_started/configuration.rst:133
+#: ../../source/getting_started/configuration.rst:153
 msgid "config.json"
 msgstr ""
 
-#: ../../source/getting_started/configuration.rst:144
+#: ../../source/getting_started/configuration.rst:164
 msgid "**apiBaseUrl** : *[Mandatory]* Base url of the Iris API"
 msgstr "**apiBaseUrl** : *[Obligatoire]* URL pour appeler Iris API"
 
-#: ../../source/getting_started/configuration.rst:145
+#: ../../source/getting_started/configuration.rst:165
 msgid ""
 "**appTitle** : *[Optional]* App title to display instead of the default "
 "one"
 msgstr ""
-"**appTitle** : *[Optionnel]* Titre de l'application à afficher à la place du défaut"
+"**appTitle** : *[Optionnel]* Titre de l'application à afficher à la place"
+" du défaut"
 
-#: ../../source/getting_started/configuration.rst:146
+#: ../../source/getting_started/configuration.rst:166
 msgid ""
 "**appLoginTitle** : *[Optional]* Login title to display instead of the "
 "default one"
 msgstr ""
-"**appLoginTitle** : *[Optionnel]* Titre à afficher sur la page de connexion à la place du défaut"
+"**appLoginTitle** : *[Optionnel]* Titre à afficher sur la page de "
+"connexion à la place du défaut"
 
-#: ../../source/getting_started/configuration.rst:147
+#: ../../source/getting_started/configuration.rst:167
 msgid "**appIcon** : *[Optional]* App icon to display instead of the default one"
-msgstr "**appIcon** : *[Optionnel]* Icone à afficher à la place de celle par défaut"
+msgstr ""
+"**appIcon** : *[Optionnel]* Icone à afficher à la place de celle par "
+"défaut"
 
-#: ../../source/getting_started/configuration.rst:151
+#: ../../source/getting_started/configuration.rst:171
 msgid "firebase-config.json"
 msgstr ""
 
-#: ../../source/getting_started/configuration.rst:165
+#: ../../source/getting_started/configuration.rst:185
 msgid "**apiKey** : *[Mandatory]* Firebase API key"
 msgstr "**apiKey** : *[Obligatoire]* Clé Firebase API"
 
-#: ../../source/getting_started/configuration.rst:166
+#: ../../source/getting_started/configuration.rst:186
 msgid "**authDomain** : *[Mandatory]* Firebase Auth domain"
 msgstr "**authDomain** : *[Obligatoire]* Domaine d'authentification Firebase"
 
-#: ../../source/getting_started/configuration.rst:167
+#: ../../source/getting_started/configuration.rst:187
 msgid "**databaseURL** : *[Mandatory]* Firebase database URL"
 msgstr "**databaseURL** : *[Obligatoire]* URL vers la base de données Firebase"
 
-#: ../../source/getting_started/configuration.rst:168
+#: ../../source/getting_started/configuration.rst:188
 msgid "**projectId** : *[Mandatory]* Firebase project ID"
 msgstr "**projectId** : *[Obligatoire]* Identifiant du projet Firebase"
 
-#: ../../source/getting_started/configuration.rst:169
+#: ../../source/getting_started/configuration.rst:189
 msgid "**storageBucket** : *[Mandatory]* Firebase storage bucket"
 msgstr "**storageBucket** : *[Obligatoire]* Bucket de stockage Firebase"
 
-#: ../../source/getting_started/configuration.rst:170
+#: ../../source/getting_started/configuration.rst:190
 msgid "**messagingSenderId** : *[Mandatory]* Firebase messaging sender ID"
-msgstr "**messagingSenderId** : *[Obligatoire]* Identifiant du messaging sender de Firebase"
+msgstr ""
+"**messagingSenderId** : *[Obligatoire]* Identifiant du messaging sender "
+"de Firebase"
 
-#: ../../source/getting_started/configuration.rst:171
+#: ../../source/getting_started/configuration.rst:191
 msgid "**appId** : *[Mandatory]* Firebase app ID"
 msgstr "**appId** : *[Obligatoire]* Identifiant de l'application Firebase"
 
-#: ../../source/getting_started/configuration.rst:173
+#: ../../source/getting_started/configuration.rst:193
 msgid ""
 "These configurations can be found in the Firebase console. Check `this "
 "documentation <https://firebase.google.com/docs/web/learn-more#config-"
 "object>`__ to know how to retrieve these informations."
 msgstr ""
-"Cette documentation peut être trouvée dans la console Firebase. Regardez `cette "
-"documentation <https://firebase.google.com/docs/web/learn-more#config-"
-"object>`__ pour savoir comment récupérer ces informations."
+"Cette documentation peut être trouvée dans la console Firebase. Regardez "
+"`cette documentation <https://firebase.google.com/docs/web/learn-more"
+"#config-object>`__ pour savoir comment récupérer ces informations."
 
