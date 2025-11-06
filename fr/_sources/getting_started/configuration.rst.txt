@@ -118,6 +118,26 @@ Parameters
 - **images.maxSize** : *(Env variable : `IMAGE_MAX_SIZE`)* - Image max size in bytes
 - **images.acceptedExtensions** : List of file extensions allowed for file upload.
 
+
+---
+
+Admin
+------
+
+YAML Structure
+^^^^^^^^^^^^^^
+
+.. code-block::
+
+    admin:
+      defaultList:
+
+
+Parameters
+^^^^^^^^^^
+
+- **admin.defaultList** : List of default administrator of the Iris instance
+
 -------
 
 
