@@ -2,7 +2,7 @@
 <html lang="fr" data-accent-color="violet" data-content_root="../">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Crédits - Iris documentation</title><link rel="shortcut icon" href="../_static/logo.ico"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Recherche" href="../search.html" /><link rel="prev" title="Contribution et support" href="contribute.html" /><script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Administration - Iris documentation</title><link rel="shortcut icon" href="../_static/logo.ico"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Recherche" href="../search.html" /><link rel="next" title="Question fréquentes" href="../questions/questions.html" /><link rel="prev" title="Démarrer avec docker compose" href="../getting_started/docker_compose.html" /><script>
     function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
     setColorMode(localStorage._theme||"auto");
   </script><link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=e1a1ceaf" />
@@ -17,7 +17,7 @@
   --sy-f-heading: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
 }
 </style>
-    <meta property="og:type" content="website"/><meta property="og:title" content="Crédits"/>
+    <meta property="og:type" content="website"/><meta property="og:title" content="Administration"/>
 <meta name="twitter:card" content="summary"/>
   
 </head>
@@ -71,10 +71,10 @@ data-aria-dark="Passer en mode automatique">
 <li class="toctree-l2"><a class="reference internal" href="../getting_started/docker_compose.html">Démarrer avec docker compose</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../admin/index.html">Administration</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Administration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../questions/questions.html">Question fréquentes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contribution et support</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Crédits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/contribute.html">Contribution et support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/credits.html">Crédits</a></li>
 </ul>
 
         </div>
@@ -86,10 +86,7 @@ data-aria-dark="Passer en mode automatique">
     <button class="rside-close js-menu xl:hidden" aria-label="Close Table of Contents" type="button" aria-controls="rside" aria-expanded="false">
       <i class="i-lucide close"></i>
     </button>
-    <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>Sur cette page</h3><ul>
-<li><a class="reference internal" href="#contributors">Contributeurs</a></li>
-</ul>
-</div><div id="ethical-ad-placement" data-ea-publisher="readthedocs"></div></div>
+    <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div id="ethical-ad-placement" data-ea-publisher="readthedocs"></div></div>
   </aside>
   <div class="rside-overlay js-menu" role="button" aria-label="Close Table of Contents" aria-controls="rside" aria-expanded="false"></div>
   <main class="sy-main w-full max-sm:max-w-full print:pt-6">
@@ -105,7 +102,7 @@ data-aria-dark="Passer en mode automatique">
         <span>/</span>
         <meta itemprop="position" content="1" />
       </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <strong itemprop="name">Crédits</strong>
+        <strong itemprop="name">Administration</strong>
         <meta itemprop="position" content="2" />
       </li></ol>
     <div class="xl:hidden ml-1">
@@ -118,19 +115,22 @@ data-aria-dark="Passer en mode automatique">
 </div><div class="flex flex-col break-words justify-between">
       <div class="min-w-0 max-w-6xl px-6 pb-6 pt-8 xl:px-12">
         <article class="yue" role="main">
-          <section id="credits">
-<h1>Crédits<a class="headerlink" href="#credits" title="Lien vers cette rubrique">¶</a></h1>
-<p>Merci à tout ceux qui ont participé sur ce projet !</p>
-<section id="contributors">
-<h2>Contributeurs<a class="headerlink" href="#contributors" title="Lien vers cette rubrique">¶</a></h2>
-<figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="https://github.com/Adaendra.png"><img alt="Adaendra Avatar" src="https://github.com/Adaendra.png" style="width: 120px;" />
-</a>
+          <section id="administration">
+<h1>Administration<a class="headerlink" href="#administration" title="Lien vers cette rubrique">¶</a></h1>
+<p>Dans <strong>Iris</strong>, vous avez une page d’administration pour vous aider.</p>
+<p>By default, only the accounts with an email listed in the <strong>api configuration parameter admin.defaultList</strong> have access to this view.
+Then, you can add other accounts through this view.</p>
+<figure class="align-center" id="id1">
+<img alt="../_images/doc-admin.png" src="../_images/doc-admin.png" />
 <figcaption>
-<p><span class="caption-text">Maxime Guilbert</span><a class="headerlink" href="#id1" title="Lien vers cette image">¶</a></p>
+<p><span class="caption-text"><em>Vue de la page d’administration</em></span><a class="headerlink" href="#id1" title="Lien vers cette image">¶</a></p>
 </figcaption>
 </figure>
-</section>
+<p>Actuellement, un administateur peut :</p>
+<ul class="simple">
+<li><p><strong>ouvrir/fermer une idée</strong></p></li>
+<li><p><strong>voir les idées fermées</strong></p></li>
+</ul>
 </section>
 
         </article><button class="back-to-top" type="button">
@@ -139,10 +139,18 @@ data-aria-dark="Passer en mode automatique">
   </svg>
   <span>Retour au sommet</span>
 </button><div class="navigation flex print:hidden"><div class="navigation-prev">
-    <a href="contribute.html">
+    <a href="../getting_started/docker_compose.html">
       <i class="i-lucide chevron-left"></i>
       <div class="page-info">
-        <span>Précédent</span><div class="title">Contribution et support</div></div>
+        <span>Précédent</span><div class="title">Démarrer avec docker compose</div></div>
+    </a>
+  </div><div class="navigation-next">
+    <a href="../questions/questions.html">
+      <div class="page-info">
+        <span>Suivant</span>
+        <div class="title">Question fréquentes</div>
+      </div>
+      <i class="i-lucide chevron-right"></i>
     </a>
   </div></div></div>
     </div>
