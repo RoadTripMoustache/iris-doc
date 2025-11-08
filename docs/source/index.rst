@@ -31,6 +31,7 @@ To make the feedback process easy and reusable for any kind of service or applic
    self
    architecture/architecture
    getting_started/index
+   admin/index
    questions/questions
    contribute/contribute
    contribute/credits
